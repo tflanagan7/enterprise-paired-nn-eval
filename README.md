@@ -1,4 +1,3 @@
-TensorFlow and TensorBoard
 # TensorFlow and TensorBoard with Evaluation
 
 Purpose
