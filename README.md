@@ -1,4 +1,6 @@
 TensorFlow and TensorBoard
+# TensorFlow and TensorBoard with Evaluation
+
 Purpose
 The purpose of this lab is twofold.
 
