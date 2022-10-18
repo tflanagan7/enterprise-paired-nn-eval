@@ -1,3 +1,1 @@
-# enterprise
-neural networks evaluation with tensorflow and tensorboard
-paired programming
+# TensorFlow and TensorBoard with Network Evaluation
