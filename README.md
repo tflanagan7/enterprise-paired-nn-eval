@@ -64,7 +64,7 @@ Preprocessing
 Missing Data
 In order for our neural network to run properly, we need to see if we have any missing data... and if so, we need to deal with it.
 
-# Before filling the missing values, let's drop Cabin column from both data.
+## Before filling the missing values, let's drop Cabin column from both data.
 Check to see if you have any missing data. If so, for what variables and data sets are you missing data?
 
 Hint: If you have missing data, use SimpleImputer to deal with the nan's.
@@ -98,20 +98,20 @@ TensorBoard is TensorFlow's visualization toolkit. It is a dashboard that provid
 
 N.B. When we loaded the libraries, we loaded the TensorBoard notebook extension. (It is the last line of code in the first code chunk.)
 
-# Clear out any prior log data.
+## Clear out any prior log data.
 !rm -rf logs
-# Be careful not to run this command if already have trained your model and you want to use TensorBoard.
+### Be careful not to run this command if already have trained your model and you want to use TensorBoard.
 
-# Sets up a timestamped log directory
+### Sets up a timestamped log directory
 log_dir = "logs/fit/" + datetime.datetime.now().strftime("%Y%m%d-%H%M%S")
 
-# Creates a file writer for the log directory.
+### Creates a file writer for the log directory.
 file_writer = tf.summary.create_file_writer(log_dir)
 
 
-# The callback function, which will be called in the fit()
+#### The callback function, which will be called in the fit()
 tensorboard_callback = tf.keras.callbacks.TensorBoard(log_dir=log_dir, histogram_freq=1)
-# Fit the neural neural network model
+### Fit the neural neural network model
 
 # Run this code by removing the #'s and set the values that you would like for epochs and batchsize
 #results = model.fit(X_train,
